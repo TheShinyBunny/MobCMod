@@ -1,0 +1,9 @@
+{
+  "bite": {
+    "category": "mobc_sounds",
+    "subtitle": "MobC Bites",
+    "sounds": [
+      "mobc:bite"
+    ]
+  }
+}

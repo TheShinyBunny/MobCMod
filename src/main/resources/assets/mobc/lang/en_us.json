@@ -1,0 +1,5 @@
+{
+  "entity.mobc.mob_c": "Mob C",
+  "death.attack.mobc.bite": "%s was bitten by %s",
+  "item.mobc.mob_c_spawn_egg": "Mob C Spawn Egg"
+}
