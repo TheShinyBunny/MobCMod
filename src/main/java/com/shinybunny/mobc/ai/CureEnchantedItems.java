@@ -50,7 +50,6 @@ public class CureEnchantedItems extends MoveToTargetPosGoal {
         boolean found = super.findTargetPos();
         if (found) {
             target = mob.world.getEntities(ItemEntity.class,new Box(targetPos),item->isCursed(item.getStack())).get(0);
-            System.out.println("found blessable item");
         }
         return found;
     }

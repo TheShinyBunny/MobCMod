@@ -76,11 +76,6 @@ public class MobCEntity extends HostileEntity {
     }
 
     @Override
-    protected Identifier getLootTableId() {
-        return super.getLootTableId();
-    }
-
-    @Override
     protected void initAttributes() {
         super.initAttributes();
         this.getAttributeContainer().get(EntityAttributes.FOLLOW_RANGE).setBaseValue(32.0f);
@@ -212,7 +207,6 @@ public class MobCEntity extends HostileEntity {
     @Override
     public void handleStatus(byte byte_1) {
         if (byte_1 == START_CRAWLING_STATUS) {
-            System.out.println("starting to crawl in client");
             stopCrawlingTime = 0;
             startCrawlingTime = 20;
             return;
@@ -304,14 +298,6 @@ public class MobCEntity extends HostileEntity {
 
         public AttackGoal(MobEntityWithAi mobEntityWithAi_1, double double_1, boolean boolean_1) {
             super(mobEntityWithAi_1, double_1, boolean_1);
-        }
-
-        @Override
-        public void start() {
-            super.start();
-            if (this.mob.getNavigation().getCurrentPath() != null) {
-                System.out.println("starting to move to " + this.mob.getNavigation().getCurrentPath().method_48());
-            }
         }
 
         @Override
